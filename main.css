@@ -1,0 +1,34 @@
+header .main-header {
+    padding-left: 300px;
+}
+.paragraph {
+    font-family: 'cursive' !important;
+}
+nav .nav-wrapper .brand-logo {
+
+    font-family: 'Times New Roman' !important;
+}
+
+.sidenav {
+    font-family: 'Georgia' !important ;
+    color:black ;
+    background-color: #afb42b;
+}
+
+.card-panel .btn {
+    font-size: x-small;
+    color: #afb42b;
+}
+
+.slider {
+    background-color: #afb42b ;
+    font-family: 'Georgia' !important;
+}
+.slider .slides .paragraph {
+    font-family: 'fantasy' !important;
+}
+
+.parallax {
+    font-family: 'Times New Roman' ;
+
+}

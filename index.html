@@ -76,6 +76,68 @@
 </ul>
 </div>
 
+ <!-- Form Section -->
+<section class="section section-Form">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h4>Get Free delivery package</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus quis consectetur corporis dolor, maiores vero quaerat fugiat ipsum sint blanditiis quam, error amet numquam? Pariatur hic commodi facere unde!</p>
+        <h4>Gift Set Package</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus quis consectetur corporis dolor, maiores vero quaerat fugiat ipsum sint blanditiis quam, error amet numquam? Pariatur hic commodi facere unde!</p>
+        <h4>Get More Discount</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus quis consectetur corporis dolor, maiores vero quaerat fugiat ipsum sint blanditiis quam, error amet numquam? Pariatur hic commodi facere unde!</p>
+        <h4>Fill up the form to order</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minus quis consectetur corporis dolor, maiores vero quaerat fugiat ipsum sint blanditiis quam, error amet numquam? Pariatur hic commodi facere unde!</p>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-4">
+          <form>
+            <div class="input-field">
+              <input type="text" id="firt_name">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="last_name">
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="number" id="Contact number">
+              <label for="Contact number">Contact number</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="Address">
+              <label for="Address">Address</label>
+            </div>
+            <div class="input-field">
+              <input type="text" class="datepicker">
+              <label for="date">Pick-up Date</label>
+          </div>
+          <div class="input-field">
+              <input type="text" class="timepicker">
+              <label for="date">Time of Pick up </label>
+          </div>
+            <div class="input-field">
+              <select id="select">
+                <option value="" disabled selected>Select</option>
+                <option value="Gift Set Package">Gift Set Package</option>
+                <option value="Free Delivery Package">Free Delivery Package</option>
+                <option value="Other">Other</option>
+              </select>
+              <label for="role">Order</label>
+            </div>
+            <input type="submit" class="btn-large grey btn-extend">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--Card-panel Reservation & pre orders-->
 <div class="container">
   <div class="row">
@@ -83,12 +145,14 @@
       <div class="card-panel">
         <h5 class="grey-text text-darken-4 center">Reservation</h5>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aspernatur quaerat consequuntur quae maiores iusto harum incidunt autem ipsa aliquam!</p>
+          <a href="#"  class="btn grey lighten-2 waves-effect waves-grey ">View More Details</a>
       </div>
     </div>
     <div class="col s12 m4">
       <div class="card-panel">
         <h5 class="grey-text text-darken-4 center"> Pre orders </h5>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aspernatur quaerat consequuntur quae maiores iusto harum incidunt autem ipsa aliquam!</p>
+          <a href="products.html"  class="btn grey lighten-2 waves-effect waves-grey ">View Products</a>
       </div>
     </div>
     <div class="col s12 m4">
@@ -156,10 +220,18 @@
 
     //SLIDER INIT
     $('.slider').slider();
-    
-    
+  
       //modal init
       $('.modal').modal();
+        
+         // Select Init
+      $('select').formSelect();
+
+       // Date Init
+      $('.datepicker').datepicker();
+      
+      // Time Init
+      $('.timepicker').timepicker();
   });
 </Script>
 
